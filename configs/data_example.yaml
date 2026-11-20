@@ -1,0 +1,9 @@
+# Example dataset configuration for YOLO instance segmentation
+path: /path/to/dataset  # Dataset root directory
+train: images/train     # Train images (relative to path)
+val: images/val         # Validation images (relative to path)
+
+# Classes
+nc: 1
+names:
+  - redness_rash

@@ -1,0 +1,78 @@
+# ==========================================
+# Git Ignore for Facial Erythema Segmentation
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables & secrets (NEVER COMMIT)
+.env
+.env.local
+*.pem
+*.key
+*.token
+
+# Model weights & training runs
+*.pt
+*.onnx
+*.engine
+weights/
+runs/
+
+# Proprietary Datasets and Raw Archives (NEVER COMMIT)
+dataset/
+dataset_mega_v2/
+dataset_yolo_redness/
+rf_*/
+redness-*/
+rosacea-*/
+synth-*/
+job234_cache/
+*_cache/
+*.zip
+*.tar
+*.tar.gz
+
+# Temporary outputs, visual inspections, logs & predictions
+cvat_rendered/
+debug_inspect/
+erythema_test/
+inspect_*/
+manual_inspect/
+perfect_test/
+pure_yolo_inspect/
+test_colab_weights/
+visual_comparison/
+vis_*.jpg
+vis_*.png
+predictions_*.json
+*.log
+*SUCCESS*.txt
+*TIMEOUT*.txt
+
+# Task binaries & cascades
+face_landmarker.task
+*.xml
+
+# Internal scratch scripts & ad-hoc files
+auto_annotate_cvat.py
+build_mega_dataset_v2.py
+create_colab_nb.py
+night_*.py
+train_local_80epochs.py
+infer_job234.py
+train_redness_colab.ipynb
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
