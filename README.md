@@ -1,0 +1,1 @@
+# cvat-redness-annotator
